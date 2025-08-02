@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Database</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      background: linear-gradient(to right, #232526, #414345);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      animation: fadeIn 1s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 10px;
+      padding: 2rem;
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
+      backdrop-filter: blur(10px);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 0.8rem;
+      border-bottom: 1px solid rgba(255,255,255,0.2);
+      text-align: left;
+    }
+
+    th {
+      background: rgba(255,255,255,0.15);
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 1rem;
+      color: #00c6ff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      color: #0072ff;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Registered Users</h2>
+    <table>
+      <tr>
+        <th>ID</th>
+        <th>Full Name</th>
+        <th>Username</th>
+      </tr>
+      {% for user in users %}
+      <tr>
+        <td>{{ user[0] }}</td>
+        <td>{{ user[1] }}</td>
+        <td>{{ user[2] }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+    <a href="{{ url_for('dashboard') }}">← Back to Dashboard</a>
+  </div>
+</body>
+</html>
