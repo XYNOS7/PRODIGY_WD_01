@@ -1,6 +1,6 @@
 # 🔐 Prodigy Auth – Secure User Authentication System
 
-![Prodigy Auth UI](https://i.imgur.com/wY0VlTz.png)
+
 
 > A secure, modern user authentication system built with **Flask**, featuring a clean glassmorphism UI, animated transitions, and SQLite backend. Designed for projects like login/registration systems, dashboard protection, and user role management foundations.
 
