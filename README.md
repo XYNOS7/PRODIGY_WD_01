@@ -39,17 +39,21 @@
 
 ## 📁 Project Structure
 
+<pre>
+
 flask-auth-app/
 │
 ├── templates/
-│ ├── login.html
-│ ├── register.html
-│ ├── dashboard.html
-│ └── database.html
+│   ├── login.html
+│   ├── register.html
+│   ├── dashboard.html
+│   └── database.html
+│
 ├── users.db
 ├── app.py
 ├── requirements.txt
 └── README.md
+</pre>
 
 
 ---
@@ -79,14 +83,18 @@ pip install -r requirements.txt
 # Run the app
 python app.py
 
+```
+
+---
+
 🔗 Visit: http://127.0.0.1:5000/
 
-🛠️ Admin/Dev Utilities
+## 🛠️ Admin/Dev Utilities
 🌐 View all users via http://127.0.0.1:5000/database
 
 🔐 Session managed routes using @login_required decorator
 
-📝 Notes
+## 📝 Notes
 Make sure users.db is writable and in the same directory as app.py.
 
 On deployment, replace app.secret_key with a secure random key from environment variables.
@@ -95,15 +103,15 @@ Passwords are never stored in plain text — always hashed securely.
 
 For production, consider PostgreSQL + Flask-Login or JWT Auth.
 
-🧠 Credits & Inspiration
+## 🧠 Credits & Inspiration
 Design inspired by Glassmorphism trends
 
 Auth flow built on top of Flask's lightweight core
 
-📄 License
+## 📄 License
 This project is licensed under the MIT License.
 
-⭐️ Show Your Support
+## ⭐️ Show Your Support
 If you liked this project:
 
 Give it a ⭐️ on GitHub
