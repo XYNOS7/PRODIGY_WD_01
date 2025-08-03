@@ -23,7 +23,7 @@
 
 | Login | Register | Dashboard |
 |-------|----------|-----------|
-| ![Login](https://i.imgur.com/zY7RBHo.gif) | ![Register](https://i.imgur.com/JUJW9lA.gif) | ![Dashboard](https://i.imgur.com/xr7ZCmM.png) |
+| ![Login](https://i.postimg.cc/P5NdxNqR/Screenshot-2025-08-03-210351.png) | ![Register](https://i.postimg.cc/pTQH7F0p/Screenshot-2025-08-03-210417.png) | ![Dashboard](https://i.postimg.cc/J4YW9mQc/Screenshot-2025-08-03-210451.png) |
 
 ---
 
